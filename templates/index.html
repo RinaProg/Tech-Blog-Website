@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+        <!-- Page Header-->
+
+        <header class="masthead" style="background-image: url('{{url_for('static' , filename='assets/img/home-bg.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Tech Blog</h1>
+                            <span class="subheading">Technology is best when it's brings people together</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    {% for post in posts %}
+                     {% set fname='img/' + post.img_file %}
+
+                     <div class="card">
+                   
+                    <div class="card-body">
+                    <div class="post-preview">
+                        <a href="/post/{{post.slug}}">
+                            <h2 class="post-title">{{post.title}}</h2>
+
+                            <!--<img align="left" src="{{url_for('static' , filename=fname)}}"  width="150" height="100"> -->
+                            <h3 class="post-subtitle">{{post.content[0:116]}}..</h3>
+                        </a><br>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Admin</a>
+                            on {{post.date}}
+                        </p>
+                    </div>
+                    </div>
+                    </div>
+                    {%endfor%}
+                    <!-- Divider-->
+            
+                    
+                   
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Pager-->
+
+                     <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="{{prev}}">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="{{next}}">1</a></li>
+    <li class="page-item"><a class="page-link" href="{{next}}">2</a></li>
+    <li class="page-item"><a class="page-link" href="{{next}}">3</a></li>
+    <li class="page-item"><a class="page-link" href="{{next}}">Next</a></li>
+  </ul>
+</nav>
+
+                    <!--<div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>-->
+                </div>
+            </div>
+        </div>
+        
+        {% endblock %}

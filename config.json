@@ -1,0 +1,19 @@
+{
+    "params":
+    {
+        "local_server" : "True",
+        "local_uri" : "mysql://root:@localhost/technews",
+        "prod_uri" : "mysql://root:@localhost/technews",
+        "about": "Here you will see the new technology related blogs and updates. ",
+        "admin_nm":"",
+        "admin_pass":"",
+        "uploder_location":"D:\\technews\\static\\assets",
+        "Desiged-By":"RinaNath",
+        "Date":"25-01-23",
+        "no_of_posts":1
+
+
+
+    }
+   
+}
