@@ -18,10 +18,10 @@ This site provides valuable  information about technology, and offers a unique p
     SQLAlchemy 2.0.4
     xampp 8.2.0
 ## TO RUN:
-Step - 1 : Install Xammp Server.
-Step - 2 : Create a database give the name "Techblog" .
-Step - 3 : Create two tables give the name "Contact" & "Posts" .
-Step - 4 : Run .py file and the project will be launched.
+   Step - 1 : Install Xammp Server.
+   Step - 2 : Create a database give the name "Techblog" .
+   Step - 3 : Create two tables give the name "Contact" & "Posts" .
+   Step - 4 : Run main.py file and the project will be launched.
 ## WORKFLOW-DIAGRAM :
 ![](https://user-images.githubusercontent.com/122221586/219603595-bb3c410d-f00e-472c-9a18-f29cafc56db9.jpg)
 
