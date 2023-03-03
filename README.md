@@ -23,7 +23,8 @@ This site provides valuable  information about technology, and offers a unique p
 +   Step - 3 : Create two tables give the name "Contact" & "Posts" .
 +   Step - 4 : Run main.py file and the project will be launched.
 ## WORKFLOW-DIAGRAM :
-![](https://user-images.githubusercontent.com/122221586/219603595-bb3c410d-f00e-472c-9a18-f29cafc56db9.jpg)
+<p align="left"><img src="https://user-images.githubusercontent.com/122221586/219603595-bb3c410d-f00e-472c-9a18-f29cafc56db9.jpg" width="520" height="300"></p>
+![]()
 
 ## OUTPUT :
 ![](https://user-images.githubusercontent.com/122221586/219603698-0be9d6a5-136e-4f89-9724-769261e5e72b.jpg)
